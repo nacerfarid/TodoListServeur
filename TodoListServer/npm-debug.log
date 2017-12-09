@@ -1,0 +1,49 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/lib/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'server',
+1 verbose cli   '--scripts-prepend-node-path=auto' ]
+2 info using npm@3.10.10
+3 info using node@v6.12.0
+4 verbose run-script [ 'preserver', 'server', 'postserver' ]
+5 info lifecycle TodoListServer@1.0.0~preserver: TodoListServer@1.0.0
+6 silly lifecycle TodoListServer@1.0.0~preserver: no script for preserver, continuing
+7 info lifecycle TodoListServer@1.0.0~server: TodoListServer@1.0.0
+8 verbose lifecycle TodoListServer@1.0.0~server: unsafe-perm in lifecycle true
+9 verbose lifecycle TodoListServer@1.0.0~server: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/nacer/Documents/TodoListServer_v7/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+10 verbose lifecycle TodoListServer@1.0.0~server: CWD: /home/nacer/Documents/TodoListServer_v7
+11 silly lifecycle TodoListServer@1.0.0~server: Args: [ '-c', 'node ./appJS/server.js' ]
+12 silly lifecycle TodoListServer@1.0.0~server: Returned: code: 1  signal: null
+13 info lifecycle TodoListServer@1.0.0~server: Failed to exec server script
+14 verbose stack Error: TodoListServer@1.0.0 server: `node ./appJS/server.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:920:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+15 verbose pkgid TodoListServer@1.0.0
+16 verbose cwd /home/nacer/Documents/TodoListServer_v7
+17 error Linux 4.10.0-42-generic
+18 error argv "/usr/bin/node" "/usr/lib/node_modules/npm/bin/npm-cli.js" "run" "server" "--scripts-prepend-node-path=auto"
+19 error node v6.12.0
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error TodoListServer@1.0.0 server: `node ./appJS/server.js`
+22 error Exit status 1
+23 error Failed at the TodoListServer@1.0.0 server script 'node ./appJS/server.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the TodoListServer package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node ./appJS/server.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs TodoListServer
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls TodoListServer
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

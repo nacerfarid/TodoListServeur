@@ -1,0 +1,55 @@
+{
+  "name": "TodoListServer",
+  "version": "1.0.0",
+  "description": "TodoList server",
+  "main": "index.js",
+  "_moduleAliases": {
+    "@data": "appJS/data",
+    "@OAuth": "appJS/OAuth",
+    "@User": "appJS/User"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./appJS/server.js",
+    "inspect": "node --inspect ./appJS/server.js",
+    "compile": "node ./node_modules/typescript/bin/tsc",
+    "lint": "node ./node_modules/tslint/bin/tslint --config \"./tslint.json\" \"app/**/*.ts\"",
+    "watch:lint": "node ./node_modules/chokidar-cli/index.js ./app/**/*.ts -c \"npm run lint\" --initial --verbose",
+    "compileAndLint": "npm-run-all --parallel watch:lint compile"
+  },
+  "keywords": [],
+  "author": "Alexandre Demeure",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.0.37",
+    "@types/node": "^8.0.20",
+    "@types/passport": "^0.3.4",
+    "@types/passport-facebook": "^2.1.5",
+    "@types/passport-google-oauth": "^1.0.35",
+    "@types/socket.io": "^1.4.30",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "fs-extra": "^4.0.1",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "immutable": "^3.8.1",
+    "module-alias": "^2.0.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "path": "^0.12.7",
+    "rxjs": "^5.4.3",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "chokidar": "^1.7.0",
+    "chokidar-cli": "^1.2.0",
+    "glob": "^7.1.2",
+    "npm-run-all": "^4.0.2",
+    "tslint": "^5.6.0",
+    "typescript": "^2.4.2"
+  }
+}
